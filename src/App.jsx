@@ -1,28 +1,28 @@
-// // import React from "react";
-// // import FrostedCard from "./components/FrostedCard";
-// // import PawNote from "./components/PawNote";
-// // import Ellipses from "./components/Ellipses";
+// import React from "react";
+// import FrostedCard from "./components/FrostedCard";
+// import PawNote from "./components/PawNote";
+// import Ellipses from "./components/Ellipses";
 
-// // export default function App() {
-// //   return (
-// //     <div className="relative w-[1920px] h-[1080px] mx-auto overflow-hidden 
-// //                     bg-[linear-gradient(107.96deg,#BECFEE_0%,#71C6E2_50%,#D9F4FA_75%,#BECFEE_100%)]">
+// export default function App() {
+//   return (
+//     <div className="relative w-[1920px] h-[1080px] mx-auto overflow-hidden 
+//                     bg-[linear-gradient(107.96deg,#BECFEE_0%,#71C6E2_50%,#D9F4FA_75%,#BECFEE_100%)]">
 
-// //       <Ellipses />
+//       <Ellipses />
 
-// //       <div className="absolute left-1/2 top-[80px] -translate-x-1/2">
-// //         <FrostedCard />
-// //       </div>
+//       <div className="absolute left-1/2 top-[80px] -translate-x-1/2">
+//         <FrostedCard />
+//       </div>
 
-// //       <PawNote />
-// //     </div>
-// //   );
-// // }
+//       <PawNote />
+//     </div>
+//   );
+// }
 
 // import { useState } from "react";
 // import Quiz from "./components/Quiz";
 // import Result from "./components/Result";
-// import { questions } from "./data/questions";
+// import questions from "./data/questions";
 
 // export default function App() {
 //   const [current, setCurrent] = useState(0); // question index
@@ -73,7 +73,7 @@
 import { useState } from "react";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
-import questions from "./data/questions";
+import {questions} from "./data/questions";
 
 
 export default function App() {
@@ -128,8 +128,8 @@ export default function App() {
         <Result score={score} onRestart={restart} />
       ) : (
         <Quiz
-          q={questions[current]}
-          current={current}
+          data={questions[current]}
+          index={current}
           total={questions.length}
           selected={selectedAnswers[current]}
           onSelect={handleSelect}

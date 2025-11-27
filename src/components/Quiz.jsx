@@ -94,11 +94,13 @@ export default function Quiz({
         <QuestionBox number={index + 1} question={data.question} />
 
         {/* OPTIONS */}
+        <div className="absolute left-1/2 -translate-x-1/2 top-[555px]">
         <OptionList
-          options={data.options}
-          selected={selected}
-          onSelect={onSelect}
+            options={data.options}
+            selectedIndex={selected}
+            onSelect={onSelect}
         />
+        </div>
 
         <PawNote />
 

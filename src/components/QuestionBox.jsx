@@ -12,19 +12,3 @@ export default function QuestionBox({ number, question }) {
 }
 
 
-// export default function QuestionBox({ index, question }) {
-//   return (
-//     <div
-//       className="
-//         w-[896px] h-[78px]
-//         bg-[#C6E9F7]
-//         border border-[#96E5FF]
-//         rounded-[10px]
-//         flex items-center justify-center
-//         text-[22px] font-semibold text-[#15313D]
-//       "
-//     >
-//       {index + 1}. {question}
-//     </div>
-//   );
-// }

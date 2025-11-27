@@ -1,4 +1,4 @@
-const questions = [
+export const questions = [
   {
     id: 1,
     question: "What sound does a cat make?",
@@ -25,4 +25,3 @@ const questions = [
   },
 ];
 
-export default questions;

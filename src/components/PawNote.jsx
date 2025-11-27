@@ -1,18 +1,3 @@
-// export default function PawNote() {
-//   return (
-//     <div className="absolute left-[119.46px] top-[752.69px] flex items-center gap-3">
-
-//       <div className="bg-white px-4 py-2 rounded-xl border border-black/10
-//                       font-caveat text-[32px] text-[#15313D] -rotate-[2.56deg]">
-//         Best of Luck !
-//       </div>
-
-//       <img src="/assets/paw.gif" className="w-[173.45px] h-[173.45px]" />
-//     </div>
-//   );
-// }
-
-
 export default function PawNote() {
   return (
     <div
