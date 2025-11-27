@@ -16,7 +16,13 @@ export default function ProgressBar({ current }) {
           />
 
           {/* active thick bar */}
-          {i <= current && (
+          {i < current && (
+            <div
+              className="absolute h-[8px] w-[216px] bg-[#15313D] top-[-3px]"
+              style={{ left: `calc(50% + ${pos}px - 108px)` }}  
+            />
+          )}
+          {i == current && (
             <div
               className="
                 absolute h-[8px] w-[173px] bg-[#15313D]
@@ -25,6 +31,7 @@ export default function ProgressBar({ current }) {
               style={{ left: `calc(50% + ${pos}px - 108px)` }}
             />
           )}
+          
         </div>
       ))}
 
