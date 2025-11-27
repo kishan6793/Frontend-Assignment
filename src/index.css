@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+
+.font-dmserif {
+  font-family: "DM Serif Display", serif;
+}
+
 /* helper classes used by absolute layout */
 .card-frost {
   background: linear-gradient(112.86deg, rgba(255,255,255,0.4) -6.68%, rgba(255,255,255,0.12) 45.63%, rgba(255,255,255,0.4) 103.45%);
