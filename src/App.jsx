@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
@@ -43,12 +44,13 @@ export default function App() {
 
   // Calculate score
   const score = Math.round(
-    (Object.keys(selectedAnswers).filter(
-      (i) => selectedAnswers[i] === questions[i].answer
-    ).length /
-      questions.length) *
-      100
-  );
+  (Object.keys(selectedAnswers).filter((i) => {
+      const selectedIndex = selectedAnswers[i];
+      const selectedText = questions[i].options[selectedIndex];
+      return selectedText === questions[i].answer;
+  }).length / questions.length) * 100
+);
+
 
   return (
     <div className="w-full min-h-screen bg-[#E9F5F7]">
