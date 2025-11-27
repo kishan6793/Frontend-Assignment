@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* helper classes used by absolute layout */
+.card-frost {
+  background: linear-gradient(112.86deg, rgba(255,255,255,0.4) -6.68%, rgba(255,255,255,0.12) 45.63%, rgba(255,255,255,0.4) 103.45%);
+  border: 0.7px solid rgba(255,255,255,1);
+  box-shadow: 0px 43.6262px 69.1583px rgba(0,0,0,0.63);
+  backdrop-filter: blur(6.97305px);
+  -webkit-backdrop-filter: blur(6.97305px);
+  border-radius: 50px;
+}
+
+/* tiny helper for fractional translate center used in Figma left calc */
+.translate-half-x {
+  transform: translateX(-50%);
+}
+
